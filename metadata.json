@@ -1,0 +1,5 @@
+{
+  "name": "Lifter Pro",
+  "description": "A sophisticated workout tracking application that automatically parses workout plans (Text or PDF), generates multi-week schedules, and tracks weights and reps for every set with local persistence.",
+  "requestFramePermissions": []
+}
