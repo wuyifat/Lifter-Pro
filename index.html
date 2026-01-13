@@ -7,7 +7,8 @@
   <meta name="theme-color" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-icon" href="/fitness_icon.png">
+  <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/10520/10520593.png">
+  <link rel="manifest" href="manifest.json">
   <title>Lifter Pro</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -24,6 +25,15 @@
     /* Ensure content accounts for iOS safe areas */
     .safe-top { padding-top: env(safe-area-inset-top); }
     .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+    
+    /* Smooth transition for views */
+    .view-transition {
+      animation: fadeIn 0.3s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 <script type="importmap">
 {
@@ -39,6 +49,5 @@
 </head>
 <body>
   <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
